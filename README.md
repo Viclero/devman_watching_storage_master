@@ -11,7 +11,8 @@ pip install -r requirements.txt
 ``` 
 
 ## Environment variables
- 
+Location is  .env
+
 for DB connection
  * HOST
  * USER
@@ -21,6 +22,13 @@ Run mode setting
  * DEBUG=True - for developer(errorsview)
  * DEBUG=False  - for user
 
+.env example:
+```
+HOST='checkpoint.domen.org'
+USER='watch'
+PASSWORD='pass5'
+DEBUG=False
+```
 
 ## to Start
 Run serven on Localhost
