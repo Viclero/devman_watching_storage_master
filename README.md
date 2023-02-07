@@ -1,15 +1,32 @@
-# Пульт охраны банка
+# Description
 
-Интерфейс для мониторинга посещаемости хранилища.
+UI for storage users control
 
-### Как установить
 
-Python3 должен быть уже установлен. 
-Затем используйте `pip` (или `pip3`, есть конфликт с Python2) для установки зависимостей:
+## Requirements
+
+Python3 should be already installed. Then use pip (or pip3, if there is a conflict with Python2) to install dependencies:
 ```
 pip install -r requirements.txt
-```
-Запуск проекта осуществляется через файл main.py
+``` 
 
-Страница достуупна по адресу
+## Environment variables
+ 
+for DB connection
+ * HOST
+ * USER
+ * PASSWORD
+
+Run mode setting
+ * DEBUG=True - for developer(errorsview)
+ * DEBUG=False  - for user
+
+
+## to Start
+Run serven on Localhost
+```
+python manage.py runserver 0.0.0.0:8000
+```
+
+UI is available in browser 
 * http://127.0.0.1:8000/
