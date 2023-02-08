@@ -14,12 +14,7 @@ pip install -r requirements.txt
 Location is  .env
 
 for DB connection
- * DB_ENGINE
- * DB_HOST
- * DB_PORT
- * DB_NAME
- * DB_USER
- * DB_PASSWORD
+ * DB_URL
 
 Run mode setting
  * DEBUG=True - for developer(debug console)
@@ -27,12 +22,7 @@ Run mode setting
 
 .env example:
 ```
-DB_ENGINE='django.db.backends.postgresql_psycopg2' 
-DB_HOST='checkpoint.domen.org'
-DB_PORT='5434'
-DB_NAME='checkpoint'
-DB_USER='watch'
-DB_PASSWORD='pass5'
+DB_URL="postgres://watch:pass5@checkpoint.domen.org:5434/checkpoint"
 DEBUG=False 
 SECRET_KEY ="8ldb6*n=vwy*$" 
 ```
