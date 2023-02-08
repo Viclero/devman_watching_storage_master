@@ -14,22 +14,34 @@ pip install -r requirements.txt
 Location is  .env
 
 for DB connection
- * HOST
- * USER
- * PASSWORD
+ * DB_ENGINE
+ * DB_HOST
+ * DB_PORT
+ * DB_NAME
+ * DB_USER
+ * DB_PASSWORD
 
 Run mode setting
- * DEBUG=True - for developer(errorsview)
+ * DEBUG=True - for developer(debug console)
  * DEBUG=False  - for user
 
 .env example:
 ```
-HOST='checkpoint.domen.org'
-USER='watch'
-PASSWORD='pass5'
-DEBUG=False
+DB_ENGINE='django.db.backends.postgresql_psycopg2' 
+DB_HOST='checkpoint.domen.org'
+DB_PORT='5434'
+DB_NAME='checkpoint'
+DB_USER='watch'
+DB_PASSWORD='pass5'
+DEBUG=False 
+SECRET_KEY ="8ldb6*n=vwy*$" 
 ```
 
+SECRET_KEY generate
+```
+from django.core.management.utils import get_random_secret_key
+print(get_random_secret_key())
+```
 ## to Start
 Run serven on Localhost
 ```
